@@ -20,7 +20,7 @@
 /*banner section*/
 .banner{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin: 30px 100px;
 }
 .banner-heading{
