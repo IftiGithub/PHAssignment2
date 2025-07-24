@@ -1,3 +1,4 @@
+/*navsection*/
 .navbox{
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,49 @@
 .orange{
     color: #E95A08;
 }
+/*plants section*/
+.plants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px;
+}
+.plant-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+.imgbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgbtn img{
+    width: 100%;
+    height: auto;
+}
+.imgbtn button{
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+.plants-title{
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0px;
+}
+.plants-desc{
+    color: #8987A1;
+    margin-top: 0px;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 576px) {
     .otherlinks{
@@ -50,6 +94,12 @@
         height: auto;
     }
     .navbox{
+        margin: 0px;
+    }
+    .plant-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plants{
         margin: 0px;
     }
     
