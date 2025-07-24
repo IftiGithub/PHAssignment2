@@ -79,6 +79,16 @@
     margin-top: 0px;
     text-align: center;
 }
+/*plantslover section*/
+.plantlover{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px;
+}
+.plantlover img{
+    width: 50%;
+    height: auto;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -101,6 +111,15 @@
     }
     .plants{
         margin: 0px;
+    }
+    .plantlover{
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0px;
+    }
+    .plantlover img{
+        width: 100%;
+        height: auto;
     }
     
 }
