@@ -1,4 +1,8 @@
 /*navsection*/
+body{
+    margin: 0;
+    padding: 0;
+}
 .navbox{
     display: flex;
     justify-content: space-between;
@@ -123,7 +127,7 @@
     justify-content: center;
     align-items: center;
     background-image: url('assets/deal-bloom.png');
-    filter: brightness(60%);
+    filter: brightness(80%);
     background-size: cover;
     width: 100%;
     height: 50%;
@@ -140,7 +144,7 @@
     width: 100%;
     height: 50%;
     border-radius: 10px;
-    filter: brightness(60%);
+    filter: brightness(80%);
 }
 .dealsright{
     display: flex;
@@ -149,7 +153,7 @@
     align-items: center;
     width: 60%;
     background-image: url('assets/deal-zabo.png');
-    filter: brightness(60%);
+    filter: brightness(80%);
     background-size: cover;
     border-radius: 10px;
     height: auto;
@@ -168,8 +172,42 @@
     text-align: center;
     margin: 0px;
 }
-
-
+/*join section*/
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 20px 0px;
+}
+.jointitle{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    margin: 10px;
+}
+.joinfield{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joinfield input{
+    width: 500px;
+    height: 50px;
+}
+.joinfield button{
+    background-color: #E95A08;
+    border: none;
+    margin: 0px;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
 
 @media screen and (max-width: 576px) {
     .otherlinks{
@@ -177,17 +215,17 @@
     }
     .banner{
         flex-direction: column-reverse;
-        margin: 0px;
+        margin: 0px 20px;
     }
     .banner-image img{
         width: 100%;
         height: auto;
     }
     .navbox{
-        margin: 0px;
+        margin: 0px 20px;
     }
     .plants{
-        margin: 0px;
+        margin: 0px 20px;
     }
     .plant-images{
         grid-template-columns: repeat(2, 1fr);
@@ -196,7 +234,7 @@
     .plantlover{
         flex-direction: column;
         align-items: center;
-        margin: 15px 0px;
+        margin: 15px 20px;
         height: auto;
     }
     .pl-img{
@@ -213,7 +251,7 @@
     .latestdeals{
         flex-direction: column;
         align-items: center;
-        margin: 0px;
+        margin: 0px 20px;
         row-gap: 20px;
     }
     .dealsleft, .dealsright{
@@ -228,6 +266,23 @@
     }
     .right-textstyle{
         font-size: 2rem;
+    }
+    .join{
+        height: 200px;
+    }
+    .joinfield{
+        height: 30px;
+    }
+    .jointitle{
+        font-size: 2rem;
+    }
+    .joinfield input{
+        width: 200px;
+        height: 30px;
+    }
+    .joinfield button{
+        width: 80px;
+        height: 30px;
     }
 
 }
