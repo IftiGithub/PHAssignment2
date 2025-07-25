@@ -84,11 +84,25 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 100px;
+    height: 600px;
 }
-.plantlover img{
+.pl-img{
     width: 50%;
+    height: 100%;
+    display: flex; 
+}
+#mainimg{
+    width: 100%;
     height: auto;
 }
+#badge{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -100px;
+    left: -200px;
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -117,9 +131,16 @@
         align-items: center;
         margin: 15px 0px;
     }
-    .plantlover img{
+    .pl-img{
         width: 100%;
         height: auto;
     }
+    #mainimg{
+        width: 100%;
+        height: auto;
+    }
+    #badge{
+        display: none;
+    }   
     
 }
